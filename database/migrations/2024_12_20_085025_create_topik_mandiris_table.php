@@ -15,6 +15,7 @@ return new class extends Migration {
             $table->foreignId('dosen_id')->nullable()->constrained()->onDelete('SET NULL');
             $table->string('judul');
             $table->string('instansi');
+            $table->string('deskripsi');
             $table->enum('status', ['pending', 'approved', 'assigned', 'rejected'])->default('pending');
             $table->text('alasan_penolakan')->nullable();
             $table->timestamps();

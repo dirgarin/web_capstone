@@ -24,16 +24,8 @@
                                     <p class="card-text">{{ $data->dosen->nama ?? '-' }}</p>
                                     <h5 class="card-title">Instansi / Organisasi / Perusahaan Objek</h5>
                                     <p class="card-text">{{ $data->instansi }}</p>
-                                    @if ($data->daftar_topik_mandiri->where('status', 'assigned')->count() > 0)
-                                        <h5 class="card-title">Status</h5>
-                                        <p class="card-text">
-                                            <span class="badge bg-success">Sudah Disetujui</span>
-                                            <br>
-                                            <span class="small text-muted">
-                                                Topik mandiri ini sudah memiliki disetujui oleh dosen pembimbing.
-                                            </span>
-                                        </p>
-                                    @endif
+                                    <h5 class="card-title">Deskripsi</h5>
+                                    <p class="card-text">{{ $data->deskripsi }}</p>
                                     @can('isTim')
                                         <h5 class="card-title">Status Persetujuan</h5>
                                         <p class="card-text">
