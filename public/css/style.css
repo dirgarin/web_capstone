@@ -1,0 +1,11 @@
+:root {
+    --bs-primary: #8f2bbc;
+    --bs-primary-rgb: 23, 59, 97;
+    --bs-warning: #00b1c1;
+    --bs-warning-rgb: 253, 137, 22;
+}
+
+body {
+    background: linear-gradient(180deg, var(--bs-primary) 0%, var(--bs-warning) 100%);
+    background-attachment: fixed;
+}
